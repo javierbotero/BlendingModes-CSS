@@ -1,3 +1,10 @@
+body {
+  background: linear-gradient(
+    to right, 
+    rgb(0, 0, 150), 
+    white 100%);
+}
+
 .parent {
   width: 500px;
   height: 500px;
@@ -38,7 +45,7 @@
 
 h1 {
   font-family:'Sriracha', cursive;
-  color: rgb(56, 56, 56);
+  color: white;
   margin: auto;
   text-align: center;
 }
@@ -53,4 +60,39 @@ p {
   border-radius: 5%;
   width: 400px;
   height: 400px;
+}
+
+.squareBlue {
+  background-color: rgb(0, 0, 255);
+  width: 400px;
+  height: 400px;
+  margin: 5% auto;
+}
+
+.imageModel {
+  margin-left: 49%;
+  mix-blend-mode: unset;
+  height: 100%;
+}
+
+.textureA {
+  width: 62vw;
+  height: 500px;
+  margin: 10% auto;
+  background: url("assets/model.jpg"), url("assets/textureSteins.jpg"), rgb(0, 255, 0);
+  background-blend-mode: screen;
+}
+
+.street {
+  font: 200px 'Finger Paint', cursive;
+  mix-blend-mode: difference;
+  color: beige;
+}
+
+.textureB {
+  width: 62vw;
+  height: 500px;
+  margin: 10% auto;
+  background: url("assets/textureBricks.jpg");
+  background-blend-mode: screen;
 }

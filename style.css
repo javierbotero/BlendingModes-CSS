@@ -3,6 +3,7 @@ body {
     to right, 
     rgb(0, 0, 150), 
     white 100%);
+    text-align: center;
 }
 
 .parent {
@@ -70,29 +71,66 @@ p {
 }
 
 .imageModel {
-  margin-left: 49%;
-  mix-blend-mode: unset;
+  margin-left: 31%;
+  mix-blend-mode: multiply;
   height: 100%;
 }
 
+.imageModel2 {
+  mix-blend-mode: multiply;
+  width: 110%;
+}
+
+.bgBrown {
+  background-color: brown;
+  width: 50vw;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+  mix-blend-mode: color-dodge;
+}
+
+.overBrown {
+  mix-blend-mode: color-dodge;
+}
+
+.bgOrange {
+  background: url("assets/textureBricks.jpg");
+  width: 50vw;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+.overOrange {
+  mix-blend-mode: screen;
+}
+
 .textureA {
-  width: 62vw;
+  width: 50vw;
   height: 500px;
   margin: 10% auto;
   background: url("assets/model.jpg"), url("assets/textureSteins.jpg"), rgb(0, 255, 0);
-  background-blend-mode: screen;
-}
-
-.street {
-  font: 200px 'Finger Paint', cursive;
-  mix-blend-mode: difference;
-  color: beige;
+  background-blend-mode: multiply;
 }
 
 .textureB {
-  width: 62vw;
+  width: 50vw;
   height: 500px;
   margin: 10% auto;
   background: url("assets/textureBricks.jpg");
   background-blend-mode: screen;
+  overflow: hidden;
 }
+
+.street {
+  font: 120px/203px 'Finger Paint', cursive;
+  mix-blend-mode: overlay;
+  color: beige;
+  padding-top: 12%;
+}
+

@@ -96,7 +96,7 @@ p {
   mix-blend-mode: color-dodge;
 }
 
-.bgOrange {
+.bgBricks {
   background: url("assets/textureBricks.jpg");
   width: 50vw;
   height: 600px;
@@ -106,8 +106,22 @@ p {
   margin: 5% auto;
 }
 
-.overOrange {
+.bgSteins {
+  background: url("assets/textureSteins.jpg");
+  width: 50vw;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5% auto;
+}
+
+.imgBlack {
   mix-blend-mode: screen;
+}
+
+.imgWhite {
+  mix-blend-mode: multiply;
 }
 
 .textureA {
@@ -128,9 +142,10 @@ p {
 }
 
 .street {
-  font: 120px/203px 'Finger Paint', cursive;
+  font: 50px/203px 'Finger Paint', cursive;
   mix-blend-mode: overlay;
   color: beige;
-  padding-top: 12%;
+  padding-top: 38%;
+  padding-right: 39%;
 }
 

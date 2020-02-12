@@ -44,7 +44,8 @@ body {
   left: 31%;
 }
 
-h1 {
+h1, 
+h2 {
   font-family:'Sriracha', cursive;
   color: white;
   margin: auto;
@@ -147,5 +148,37 @@ p {
   color: beige;
   padding-top: 38%;
   padding-right: 39%;
+}
+
+.degrade {
+  background: linear-gradient(black, white);
+  width: 50vw;
+  height: 500px;
+  margin: 10% auto;
+  overflow: hidden;
+}
+
+.images {
+  width: 50vw;
+  height: 500px;
+  margin: 10% auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.sameImages {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overlay {
+  mix-blend-mode: overlay;
+  width: 110%;
+}
+
+.hardLight {
+  mix-blend-mode: hard-light;
+  width: 110%;
 }
 

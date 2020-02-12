@@ -4,44 +4,7 @@ body {
     rgb(0, 0, 150), 
     white 100%);
     text-align: center;
-}
-
-.parent {
-  width: 500px;
-  height: 500px;
-  margin: 10% auto;
-  background-color: yellow;
-  position: absolute;
-  left: 34%;
-}
-
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items;: center;
-  position: absolute;
-  border: 3px solid white;
-}
-
-.green {
-  background-color: rgb(0, 255, 0);
-  top: 20%;
-  left: 17%;
-}
-
-.red {
-  background-color: rgb(255, 0, 0);
-  top: 20%;
-  left: 46%;
-}
-
-.blue {
-  background-color: rgb(0, 0, 255);
-  top: 42%;
-  left: 31%;
+    background-repeat: no-repeat;
 }
 
 h1, 
@@ -56,6 +19,15 @@ p {
   align-self: center;
   color: white;
   font: 52px 'Sriracha', cursive;
+}
+
+.division {
+  display: flex;
+  justify-content: space-between;
+}
+
+.division-child {
+  flex-basis: 40%;
 }
 
 .bglogo {
@@ -99,7 +71,6 @@ p {
 
 .bgBricks {
   background: url("assets/textureBricks.jpg");
-  width: 50vw;
   height: 600px;
   display: flex;
   align-items: center;
@@ -177,8 +148,54 @@ p {
   width: 110%;
 }
 
+.over {
+  width: 110%;
+}
+
 .hardLight {
   mix-blend-mode: hard-light;
   width: 110%;
 }
 
+.softLight {
+  mix-blend-mode: soft-light;
+  width: 110%;
+}
+
+.parent {
+  width: 500px;
+  height: 500px;
+  margin: 10% auto;
+  background-color: yellow;
+  position: absolute;
+  left: 34%;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items;: center;
+  position: absolute;
+  border: 3px solid white;
+}
+
+.green {
+  background-color: rgb(0, 255, 0);
+  top: 20%;
+  left: 17%;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+  top: 20%;
+  left: 46%;
+}
+
+.blue {
+  background-color: rgb(0, 0, 255);
+  top: 42%;
+  left: 31%;
+}

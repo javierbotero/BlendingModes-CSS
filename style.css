@@ -129,6 +129,22 @@ p {
   overflow: hidden;
 }
 
+.degradeRed {
+  background: linear-gradient(rgb(150, 0 , 0), rgb(100, 100, 0));
+  width: 50vw;
+  height: 500px;
+  margin: 10% auto;
+  overflow: hidden;
+}
+
+.degradeRedLight {
+  background: linear-gradient(rgb(255, 0 , 0), rgb(255, 255, 0));
+  width: 50vw;
+  height: 500px;
+  margin: 10% auto;
+  overflow: hidden;
+}
+
 .images {
   width: 50vw;
   height: 500px;
@@ -162,8 +178,28 @@ p {
   width: 110%;
 }
 
-.color-dodge {
+.colorDodge {
   mix-blend-mode: color-dodge;
+  width: 110%;
+}
+
+.colorBurn {
+  mix-blend-mode: color-burn;
+  width: 110%;
+}
+
+.darken {
+  mix-blend-mode: darken;
+  width: 110%;
+}
+
+.lighten {
+  mix-blend-mode: lighten;
+  width: 110%;
+}
+
+.difference {
+  mix-blend-mode: difference;
   width: 110%;
 }
 

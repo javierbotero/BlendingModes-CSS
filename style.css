@@ -123,10 +123,11 @@ p {
 
 .bgModel {
   background-image: url(assets/model.jpg);
-  width: 50vw;
+  width: 110%;
   height: 500px;
-  margin: 10% auto;
+  margin: 5% auto;
   overflow: hidden;
+  background-size: 110%;
 }
 
 .degrade {
@@ -149,7 +150,7 @@ p {
   background: linear-gradient(rgb(255, 0 , 0), rgb(255, 255, 0));
   width: 50vw;
   height: 500px;
-  margin: 10% auto;
+  margin: 5% auto;
   overflow: hidden;
 }
 
@@ -232,6 +233,7 @@ p {
 .hue {
   mix-blend-mode: hue;
   width: 110%;
+  margin: 0;
 }
 
 .circle {

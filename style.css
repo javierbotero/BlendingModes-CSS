@@ -2,7 +2,7 @@ body {
   background: linear-gradient(
     to right, 
     rgb(0, 0, 150), 
-    white 100%);
+    rgb(150, 0, 0) 100%);
     text-align: center;
     background-repeat: no-repeat;
 }
@@ -221,46 +221,27 @@ p {
   width: 110%;
 }
 
-.parent {
-  width: 500px;
-  height: 500px;
-  margin: 10% auto;
-  background-color: yellow;
-  position: absolute;
-  left: 34%;
-}
-
 .hue {
   mix-blend-mode: hue;
   width: 110%;
   margin: 0;
 }
 
-.circle {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items;: center;
-  position: absolute;
-  border: 3px solid white;
+.saturation {
+  mix-blend-mode: saturation;
+  width: 110%;
+  margin: 0;
 }
 
-.green {
-  background-color: rgb(0, 255, 0);
-  top: 20%;
-  left: 17%;
+.color {
+  mix-blend-mode: color;
+  width: 110%;
+  margin: 0;
 }
 
-.red {
-  background-color: rgb(255, 0, 0);
-  top: 20%;
-  left: 46%;
+.luminosity {
+  mix-blend-mode: luminosity;
+  width: 110%;
+  margin: 0;
 }
 
-.blue {
-  background-color: rgb(0, 0, 255);
-  top: 42%;
-  left: 31%;
-}

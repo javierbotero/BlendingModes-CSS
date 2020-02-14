@@ -121,6 +121,14 @@ p {
   padding-right: 39%;
 }
 
+.bgModel {
+  background-image: url(assets/model.jpg);
+  width: 50vw;
+  height: 500px;
+  margin: 10% auto;
+  overflow: hidden;
+}
+
 .degrade {
   background: linear-gradient(black, white);
   width: 50vw;
@@ -168,6 +176,10 @@ p {
   width: 110%;
 }
 
+.overTop {
+  margin-top: 0;
+}
+
 .hardLight {
   mix-blend-mode: hard-light;
   width: 110%;
@@ -203,6 +215,11 @@ p {
   width: 110%;
 }
 
+.exclusion {
+  mix-blend-mode: exclusion;
+  width: 110%;
+}
+
 .parent {
   width: 500px;
   height: 500px;
@@ -210,6 +227,11 @@ p {
   background-color: yellow;
   position: absolute;
   left: 34%;
+}
+
+.hue {
+  mix-blend-mode: hue;
+  width: 110%;
 }
 
 .circle {

@@ -5,20 +5,23 @@ body {
     rgb(150, 0, 0) 100%);
     text-align: center;
     background-repeat: no-repeat;
+    padding: 1% 8%;
 }
 
-h1, 
-h2 {
+h1 {
   font-family:'Sriracha', cursive;
   color: white;
   margin: auto;
   text-align: center;
 }
 
-p {
+p,
+code,
+h2 {
   align-self: center;
   color: white;
-  font: 52px 'Sriracha', cursive;
+  font: 20px 'Sriracha', cursive;
+  text-align: justify;
 }
 
 .division {
@@ -88,20 +91,12 @@ p {
   margin: 5% auto;
 }
 
-.screen {
-  mix-blend-mode: screen;
-}
-
-.imgWhite {
-  mix-blend-mode: multiply;
-}
-
 .textureA {
   width: 50vw;
   height: 500px;
   margin: 10% auto;
-  background: url("assets/model.jpg"), url("assets/textureSteins.jpg"), rgb(0, 255, 0);
-  background-blend-mode: multiply;
+  background: url(assets/model.jpg), url(assets/textureSteins.jpg), rgb(0, 255, 0);
+  background-blend-mode: multiply, multiply, normal;
 }
 
 .textureB {
@@ -114,11 +109,11 @@ p {
 }
 
 .street {
-  font: 50px/203px 'Finger Paint', cursive;
-  mix-blend-mode: overlay;
-  color: beige;
-  padding-top: 38%;
-  padding-right: 39%;
+  color: chocolate;
+  font: 125px/201px 'Finger Paint', cursive;
+  mix-blend-mode: color-dodge;
+  padding-top: 14%;
+  padding-right: 14%;
 }
 
 .bgModel {
@@ -168,17 +163,27 @@ p {
   left: 0;
 }
 
-.overlay {
-  mix-blend-mode: overlay;
-  width: 110%;
-}
-
 .over {
   width: 110%;
 }
 
 .overTop {
   margin-top: 0;
+}
+
+/* screen modes */
+
+.multiply {
+  mix-blend-mode: multiply;
+}
+
+.screen {
+  mix-blend-mode: screen;
+}
+
+.overlay {
+  mix-blend-mode: overlay;
+  width: 110%;
 }
 
 .hardLight {

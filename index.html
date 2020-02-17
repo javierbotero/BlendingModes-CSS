@@ -11,12 +11,46 @@
 </head>
 <body>
     <h1>Blending Modes</h1>
+    <div class="textureA">
+        <h1 class="street">Blending Modes</h1>
+    </div> 
+    <p>
+        I am Javier, a guy starting in this world of web development. My background is the filmmaking business, especially the video edition. I am writing this article to help guys like me that are learning web development or everyone that considers the design or the “look” of a webpage one of their passions. Back in my days of video-editor one cool thing that I found in the software video and design editors was the ability to blend two images or more in order to display better. So if you just put an image in a given color background you can start to discover how the different values can make interesting looks.
+    </p>
+    <br>
+    <p>Blending Modes is a CSS data type that handles how elements overlap, it takes the color of the layers or elements stacked, mix them and create a new combination or output. You can play with blend modes with two CSS properties: <background-blend-mode> and <mix-blend-mode>. The first one is used with background images and the values work with the images that are just inside the background property of the element. This would be how it looks in the code:</p>
+    <br>
+    <p><i>&ltbackground-blend-mode></i></p>
+    <p>In the HTML:</p>
+    <code>   &ltdiv class="parent"> <br>
+        &lth1 class="street">Blend Modes &lt/h1><br>
+        &lt/div> 
+    </code>
+    <p>In the css</p>
+    <code>   .parent { <br>
+        background: url("assets/textureBricks.jpg");<br>
+            height: 600px;<br>
+        }<br>
+        .child {<br>
+        mix-blend-mode: screen;<br>
+        }
+    </code>
+    <br><br><br><br><br><br><br>
     <h2>These ones just play with RGB values of both layers</h2>
     <br>
     <br>
     <br>
     <br>
     <h2>Multiply</h2>
+    <div class="division">
+        <div class="bgSteins division-child">
+            <img src="assets/LogoW.jpg" alt="Dog">
+        </div>
+        <div class="bgSteins division-child">
+            <img class="multiply" src="assets/LogoW.jpg" alt="Dog">
+        </div>
+    </div>
+    <h2>Screen</h2>
         <div class="division">
             <div class="bgBricks division-child">  
                 <img src="assets/Logo.jpg" alt="Dog">
@@ -24,21 +58,11 @@
             <div class="bgBricks division-child">  
                 <img class="screen" src="assets/Logo.jpg" alt="Dog">
             </div>
-        </div>
-    <h2>Screen</h2>
-        <div class="division">
-            <div class="bgSteins division-child">
-                <img src="assets/LogoW.jpg" alt="Dog">
-            </div>
-            <div class="bgSteins division-child">
-                <img class="imgWhite" src="assets/LogoW.jpg" alt="Dog">
-            </div>
-        </div>
-        
+        </div>      
+     <br>
+     <h2>From here you will see in the left part, the image that goes below, <br> and will be blended with my picture, which is on top with the property mix-blend-mode.</h2>
+     <br><br><br><br>
      <h2>Overlay</h2>
-     <br>
-     <br>
-     <h2>From here you will see in the left part the image that goes below and will be blended with my picture which is on top with the property mix-blend-mode</h2>
      <div class="division">
           <div class="degrade division-child">
           </div>    
@@ -288,9 +312,7 @@
              <div class="degradeRedLight luminosity"></div>
          </div>
      </div> 
-     <div class="textureA">
-            <h1 class="street">Blend Modes</h1>
-    </div> 
+
      <div class="squareBlue">
             <img class="imageModel" src="assets/model.jpg" alt="logo">
     </div> 
